@@ -34,7 +34,7 @@ public class Settings : AutoConfiguration
 
     [ConfigComment("How to launch the UI. If 'none', just quietly launch.\nIf 'web', launch your web-browser to the page.\nIf 'webinstall', launch web-browser to the install page.\nIf 'electron', launch the UI in an electron window (NOT YET IMPLEMENTED).")]
     [ManualSettingsOptions(Impl = null, Vals = ["none", "web", "webinstall", "electron"])]
-    public string LaunchMode = "webinstall";
+    public string LaunchMode = "none";
 
     [ConfigComment("If set true, some additional debugging data will be attached where relevant, such as in image metadata.")]
     public bool AddDebugData = false;
